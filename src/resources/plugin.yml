@@ -1,1 +1,15 @@
-
+name: CommandBlockFinder
+version: 1.0.0
+main: de.example.cbfinder.CommandBlockFinder
+api-version: '1.21'
+description: Findet Command Blöcke in der Nähe und zeigt deren Koordinaten im Chat.
+commands:
+  findcb:
+    description: Sucht Command Blöcke im Umkreis
+    usage: /findcb [radius]
+    permission: cbfinder.use
+    default: op
+permissions:
+  cbfinder.use:
+    description: Erlaubt die Nutzung von /findcb
+    default: op
